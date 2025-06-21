@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Parabéns! Você é o grande vencedor!</title>
+  <style>
+    body {
+      background-color: gold;
+      color: red;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      animation: piscar 1s infinite;
+    }
+
+    @keyframes piscar {
+      0% { background-color: gold; }
+      50% { background-color: yellow; }
+      100% { background-color: gold; }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 1em;
+    }
+
+    .botao-revelar {
+      padding: 20px;
+      background: red;
+      color: white;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      margin-top: 2em;
+    }
+
+    .mensagem-premio {
+      font-size: 2em;
+      margin: 30px;
+    }
+
+    #vencedor {
+      display: none;
+      font-size: 2em;
+      color: blue;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 VOCÊ ACABA DE GANHAR R$ 100.000,00! 🎉</h1>
+  <p class="mensagem-premio">Para receber seu prêmio, deposite apenas R$ 100,00 na nossa conta secreta 💰</p>
+
+  <button class="botao-revelar" onclick="revelarVencedor()">CLIQUE PARA SABER O GRANDE VENCEDOR!</button>
+
+  <div id="vencedor">😆 RICARDO CARVALHO - BOMBEIRO DE GOIÁS 😆</div>
+
+  <audio id="audio" src="https://www.myinstants.com/media/sounds/trollolololololol.mp3" preload="auto"></audio>
+
+  <script>
+    function revelarVencedor() {
+      document.getElementById("vencedor").style.display = "block";
+      const audio = document.getElementById("audio");
+      audio.play();
+      alert("KKKK PEGADINHA DO MALANDRO!");
+    }
+  </script>
+
+</body>
+</html>
